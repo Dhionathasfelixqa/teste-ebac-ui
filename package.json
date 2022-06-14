@@ -17,7 +17,8 @@
     "url": "https://github.com/Dhionathasfelixqa/teste-ebac-ui/issues"
   },
   "homepage": "https://github.com/Dhionathasfelixqa/teste-ebac-ui#readme",
-  "devDependencies": {
-    "cypress": "^9.7.0"
+  "dependencies": {
+    "@faker-js/faker": "^7.2.0",
+    "faker": "^5.5.3"
   }
 }
