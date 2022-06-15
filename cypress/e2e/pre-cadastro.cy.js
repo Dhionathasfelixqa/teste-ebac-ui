@@ -2,7 +2,7 @@ var faker = require('faker')
 
 describe('Realizar cadastro de login', () => {
   beforeEach(() => {
-    cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+    cy.visit('minha-conta/')
   })
 
   it('Deve realizar o cadastro com sucesso', () => {
