@@ -23,5 +23,17 @@ describe('Realizar cadastro de login', () => {
       'contain',
       'Detalhes da conta modificados com sucesso.'
     )
+
+    it.only('Deve realizar pre-cadastro com sucesso Usando comando custom', () => {
+      let nomefaker = faker.name.firstName()
+      let sobrenomefaker = faker.name.lastName()
+      let emailfaker = faker.internet.email(nomefaker)
+
+      cy.precadastro(emailfaker, 'teste@teste.com', nomefaker, sobrenomefaker)
+      cy.get('.woocommerce-message').should(
+        'contain',
+        'Detalhes da conta modificados com sucesso.'
+      )
+    })
   })
 })
